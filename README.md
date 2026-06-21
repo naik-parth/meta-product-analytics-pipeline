@@ -31,7 +31,7 @@ This project simulates the daily workflow of a **Data Engineer (Product Analytic
 
 Clone the repository:
 
-git clone [https://github.com/yourusername/meta-product-analytics-pipeline.git](https://github.com/naik-parth/meta-product-analytics-pipeline.git)
+git clone [https://github.com/naik-parth/meta-product-analytics-pipeline.git](https://github.com/naik-parth/meta-product-analytics-pipeline.git)
 cd meta-product-analytics-pipeline
 
 Install dependencies:
