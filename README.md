@@ -29,24 +29,22 @@ This project simulates the daily workflow of a **Data Engineer (Product Analytic
 
 ## ⚙️ How to Run Locally
 
-1. Clone the repository:
-```bash
-   git clone [https://github.com/yourusername/meta-product-analytics-pipeline.git](https://github.com/yourusername/meta-product-analytics-pipeline.git)
-   cd meta-product-analytics-pipeline
+Clone the repository:
+
+git clone [https://github.com/yourusername/meta-product-analytics-pipeline.git](https://github.com/yourusername/meta-product-analytics-pipeline.git)
+cd meta-product-analytics-pipeline
+
 Install dependencies:
+pip install pandas streamlit faker
 
-Bash
-   pip install pandas streamlit faker
 Execute the pipeline in order:
+python generate_logs.py
+python etl_pipeline.py
+python data_models.py
+python sla_monitor.py
 
-Bash
-   python generate_logs.py
-   python etl_pipeline.py
-   python data_models.py
-   python sla_monitor.py
 Launch the Product Dashboard:
+streamlit run dashboard.py
 
-Bash
-   streamlit run dashboard.py
 🎯 Business Value
 This project demonstrates the ability to not only move data but to model data for product impact. By decoupling the raw ingestion from the analytical tables, and layering automated SLA checks on top, this architecture ensures that Data Scientists and Product Managers are making decisions on highly reliable, highly available data.
